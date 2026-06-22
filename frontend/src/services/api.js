@@ -3,10 +3,11 @@ import axios from 'axios';
 export const TOKEN_KEY = 'flowops_token';
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || '/api',
+  baseURL: import.meta.env.VITE_API_URL || "/api",
   headers: {
-    Accept: 'application/json',
-    'Content-Type': 'application/json',
+    Accept: "application/json",
+    "Content-Type": "application/json",
+    "Origin": baseURL,
   },
 });
 
